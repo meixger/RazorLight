@@ -35,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="[3.0.3,3.1)" />
     <PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="[3.0.3,3.1)" />
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="[3.0.3,3.1)" />
@@ -48,7 +48,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="3.1.5" />
     <PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="3.1.5" />
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.5" />

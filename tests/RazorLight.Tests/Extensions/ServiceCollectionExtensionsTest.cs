@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿#if !(NETCOREAPP2_0)
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+#endif
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Xunit;
 using RazorLight.Extensions;
 using System;
-using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Builder;
 using RazorLight.Compilation;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System.Collections.Generic;
